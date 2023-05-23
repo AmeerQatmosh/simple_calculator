@@ -28,7 +28,7 @@ export default class Calculator extends React.Component{
         
         var N1 = parseInt(this.state.primary);
         var N2 = parseInt(this.state.secondary);
-        if (N2==0){
+        if (N2===0){
             const error = "Error: Can't Devide by zero!";
             this.setState({myText:error})
         }
